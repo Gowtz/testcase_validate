@@ -22,7 +22,7 @@
 3. Go to `./backend` folder and create a virtual enviroment for this project and activate
     ```bash
      cd backend
-     python -m virtualenv
+     python -m virtualenv venv
 
      # for Windows 
      . venv\scripts\activate
