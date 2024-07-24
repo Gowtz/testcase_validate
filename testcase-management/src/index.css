@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+tr{
+    @apply border-b-2 border-secondaryBG
+}
+td,th{
+    @apply px-10 py-4
+}
+select{
+    @apply bg-secondaryBG px-3 py-2 rounded
+}
