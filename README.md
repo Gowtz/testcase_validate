@@ -5,33 +5,39 @@
 
 
 ## How to run this Project
-1. download and install postgress database or create cloud instance.Create a database named `testcase`
- ```sql
- CREATE DATABASE testcase
- ```
-2. Go to `./backend` folder and create a virtual enviroment for this project and activate
-```bash
-cd backend
-python -m virtualenv
+1. download and install postgress database setup username and password.Create a database named `testcase`. 
+    ```sql
+    CREATE DATABASE testcase
 
-# for Windows 
-. venv\scripts\activate
+     ```
+2. Confiure you database in the code
+   
+    ```python
+    #backend/flaskr/bd.py 
+    host="DATABASE URL" # keep localhost
+    user="USERNAME",
+    password="PASSWORD",
+    
+    ```
+3. Go to `./backend` folder and create a virtual enviroment for this project and activate
+    ```bash
+     cd backend
+     python -m virtualenv
 
-#for linux or mac 
-source venv/bin/activate
-```
-3. if the data base created in local skip this step. Else get the database URL and copy to 
-```
-backend/flaskr/bd.py on line number 8
-host="Your DATABASE URL"
-``` 
+     # for Windows 
+     . venv\scripts\activate
+
+     #for linux or mac 
+     source venv/bin/activate
+    ```
+
 4. Install the Library and run the project
 ```bash
 #Install 
 pip install -r requirements.txt
 
 # Run The application 
-flask --app flaskr run --debug
+flask --app flaskr run --debug # Keep the server running
 
 ```
 ### Backend over Done
